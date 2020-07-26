@@ -8,6 +8,7 @@ jobs:
         name: Build and Test
         runs-on: ${{ matrix.os }}
         strategy: 
+          matrix:
             os: [windows-latest, ubuntu-latest]
         steps:
             - name: Get the sources
