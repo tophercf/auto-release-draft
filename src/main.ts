@@ -3,6 +3,7 @@ import * as event from './event'
 import * as version from './version'
 export async function run(): Promise<void> {
   try {
+    core.debug('testing the main file run')
     // get tag
     const tag = event.getCreatedTag()
     // check if it is semver

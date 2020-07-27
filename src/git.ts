@@ -1,5 +1,8 @@
 export async function getChangesIntroducedByTag(tag: string): Promise<string> {
-    // get previous tag
+  // get previous tag
+  return tag
+}
+/*
     const previousVersionTag = await getPreviousVersionTag(tag);
 
     return previousVersionTag ? getCommitMessagesBetween(previousVersionTag, tag)
@@ -9,3 +12,4 @@ export async function getChangesIntroducedByTag(tag: string): Promise<string> {
 export async function getPreviousVersionTag(tag: string): Promise<string | null> {
     
 }
+*/
